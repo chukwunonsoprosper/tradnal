@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Darker;
+    src: url(../font/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
+span,
+a {
+    font-size: 95%;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+#root {
+    width: 100%;
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    font-family: Manrope;
+}
+
+.header .firstELement {
+    width: 30%;
+}
+
+.header .firstELement span {
+    font-weight: 500;
+}
+
+
+.header .sideN a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+}
+
+.header .sideN i {
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.header .sideN a:hover {
+    color: dodgerblue;
+    transition: 0.5s ease-in-out;
+}
+
+.appPage {
+    width: 100%;
+    animation: fade 0.5s linear forwards;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes slideout {
+    from {
+        margin-left: -300px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+.appPage .activitySection {
+    width: 30%;
+    height: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    background-color: rgba(26, 25, 25, 0.283);
+}
+
+.appPage .activityOverview {
+    width: 70%;
+    position: fixed;
+    height: 100%;
+    right: 0;
+}
+
+
+.appPage .activitySection .inputSearch {
+    width: 100%;
+    position: relative;
+}
+
+.activitySection .inputSearch input {
+    padding: 10px 30px;
+    width: 100%;
+    font-family: Manrope;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #eee;
+}
+
+.activitySection .inputSearch i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.activitySection .savedJournal {
+    width: 100;
+    padding: 20px 0px;
+}
+
+.activitySection .savedJournal>span {
+    font-weight: 700;
+    font-family: Darker;
+}
+
+.savedJournal .theJournal {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.theJournal .ie {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: Manrope;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ie i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.ie span#pair {
+    padding-left: 30px;
+}
+
+.ie .statuewin {
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+
+}
+
+.ie .statueloss {
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+}
+
+.activitySection .acc {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    left: 0;
+    bottom: 65px;
+}
+
+.activitySection .acc .profile {
+    width: 100%;
+    position: relative;
+}
+
+.acc .profile img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.acc .profile span {
+    padding-left: 55px;
+    font-family: Manrope;
+    font-weight: 500;
+}
+
+.activityOverview .firstScreen {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.firstScreen .screen {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-family: Manrope;
+}
+
+.newJournal {
+    position: absolute;
+    bottom: 200px;
+    text-align: center;
+    right: 50px;
+}
+
+.newJournal span {
+    padding: 15px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 500;
+    font-family: Manrope;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+@keyframes popout {
+    0% {
+        background-color: dodgerblue;
+        opacity: 0.5;
+        padding: 3px 3px;
+    }
+
+    50% {
+        background-color: rgb(123, 152, 181);
+        opacity: 0.9;
+        padding: 5px 5px;
+    }
+
+    100% {
+        background-color: dodgerblue;
+        opacity: 0.5;
+        padding: 3px 3px;
+    }
+}
+
+.activitySection .closeb {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.activitySection .closeb span {
+    padding: 6px 6px;
+    background-color: rgba(12, 12, 12, 0.365);
+    color: white;
+    font-weight: 500;
+    font-family: Manrope;
+    /* animation: popout 0.4s linear infinite; */
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.closebnow {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.closebnow span {
+    padding: 6px 6px;
+    background-color: rgba(12, 12, 12, 0.365);
+    color: white;
+    font-weight: 500;
+    font-family: Manrope;
+    /* animation: popout 0.4s linear infinite; */
+    cursor: pointer;
+    border-radius: 100px;
+}
