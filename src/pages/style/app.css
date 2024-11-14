@@ -154,6 +154,11 @@ body {
     padding: 10px 0px;
 }
 
+.theJournal a {
+    text-decoration: none;
+    color: black;
+}
+
 .theJournal .ie {
     position: relative;
     width: 100%;

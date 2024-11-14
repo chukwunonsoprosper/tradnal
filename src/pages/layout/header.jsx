@@ -1,11 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
-import usesta
+import { useContext } from "react";
+import { appInformation } from "../../App";
 const Header = () => {
+    const appData = useContext(appInformation)
     return (
         <>
             <div className="header">
                 <div className="firstELement">
-                    <span>TradNally</span>
+                    <span>{appData.appName}</span>
                 </div>
 
                 <div className="sideN">

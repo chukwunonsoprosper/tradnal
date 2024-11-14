@@ -2,17 +2,17 @@ import Sidebar from "./layout/sidebar";
 import { useContext } from "react";
 import { appInformation } from "../App";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 const Home = () => {
   const appData = useContext(appInformation);
   const [journal, showJournal] = useState(false);
   const [viewJournal, setViewJournal] = useState("");
+  const {param} = useParams()
 
   useEffect(() => {
-    const href = window.location.href;
-    const newJournalData = href.split("?");
-    newJournalData[1] != undefined ? showJournal(!journal) : showJournal(false);
-    setViewJournal(newJournalData[1]);
+   param ? showJournal(true) : showJournal(false);
   }, []);
+
 
   return (
     <div className="appPage">
@@ -22,7 +22,7 @@ const Home = () => {
         {journal ? (
           <div className="firstScreen">
             <div className="thejournal">
-              <p>you are currently viewing {viewJournal}</p>
+              <p>you are currently viewing {param}</p>
             </div>
           </div>
         ) : (

@@ -1,5 +1,6 @@
 import image from "../image/headshot-pretty-young-woman-with-crisp-dark-hair-enjoys-pleasant-telephone-talk-holds-takeaway-coffee-cup-wears-round-spectacles-purple-jumper-being-talkative-uses-modern-technologies 2.png";
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 const Sidebar = () => {
     const [showNav, updateside] = useState(true);
 
@@ -23,17 +24,17 @@ const Sidebar = () => {
                         <span>Saved Journal</span>
 
                         <div className="theJournal">
-                            <div className="ie">
+                            <Link to='/home/prosper'><div className="ie">
                                 <i className="ri-money-dollar-circle-line"></i>
                                 <span id="pair">AUD/USD trade summary</span>
                                 <div className="statuewin"></div>
-                            </div>
+                            </div></Link>
 
-                            <div className="ie">
+                            <Link to='/home/welcome'><div className="ie">
                                 <i className="ri-money-dollar-circle-line"></i>
                                 <span id="pair">AUD/USD trade summary</span>
-                                <div className="statueloss"></div>
-                            </div>
+                                <div className="statuewin"></div>
+                            </div></Link>
                         </div>
                     </div>
 
