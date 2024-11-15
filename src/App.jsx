@@ -6,7 +6,7 @@ import { createContext } from "react";
 import Publicjournal from "./pages/publicjournal";
 import Stat from "./pages/stats";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import error
+import Errorpage from './pages/error/error'
 export const appInformation = createContext();
 
 const appInfo = {
@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/publicjournal" element={<Publicjournal />} />
             <Route path="/stat" element={<Stat />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<Errorpage />} />
           </Route>
         </Routes>
       </BrowserRouter>

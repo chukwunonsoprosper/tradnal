@@ -314,3 +314,26 @@ body {
     cursor: pointer;
     border-radius: 100px;
 }
+
+.appPage .errorImage {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.errorImage img {  
+    width: 400px;
+}
+
+.activityOverview .firstScreen .thejournal {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.activityOverview .firstScreen .theJournal h2 {
+    font-family: Manrope;
+}

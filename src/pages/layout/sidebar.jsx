@@ -33,7 +33,7 @@ const Sidebar = () => {
                             <Link to='/home/welcome'><div className="ie">
                                 <i className="ri-money-dollar-circle-line"></i>
                                 <span id="pair">AUD/USD trade summary</span>
-                                <div className="statuewin"></div>
+                                <div className="statueloss"></div>
                             </div></Link>
                         </div>
                     </div>
