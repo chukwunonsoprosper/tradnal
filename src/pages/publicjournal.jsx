@@ -1,11 +1,12 @@
 import Sidebar from "./layout/sidebar";
 import { useContext } from "react";
 import { appInformation } from "../App";
+import { journalDataArray } from "./home";
 const Publicjournal = () => {
     const appData = useContext(appInformation)
     return (
         <div className="appPage">
-            <Sidebar />
+            <Sidebar savedJournal={journalDataArray} />
 
             <div className="activityOverview">
                 <div className="firstScreen">
