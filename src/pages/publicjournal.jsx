@@ -19,7 +19,7 @@ const Publicjournal = () => {
                             {journalDataArray.map((journal, index) => (
                                 <div key={index} className="journalEntry">
                                     <div className="authorInfo">
-                                        <img src={journal.authorImage || 'default-avatar.png'} alt="" className="authorImage" />
+                                        <img src={journal.authorImage || 'https://scontent-lis1-1.xx.fbcdn.net/v/t39.30808-1/460893366_557998126567581_8735046666777833700_n.jpg?stp=dst-jpg_s200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFkYelOu4K-K6UwU-2azpyQZrSHvOSluRxmtIe85KW5HDBwhfplGzhp4C3GbLtJL608gSZNFOVuhYue2E_DqS1I&_nc_ohc=DDzcSiZ9-a0Q7kNvgEpFHel&_nc_zt=24&_nc_ht=scontent-lis1-1.xx&_nc_gid=AnHcGgRA-RSVVlq3JXBonNA&oh=00_AYBgH-YXTamlzObbsZowbPeSrNIBFyEprsJyktpZibZXSg&oe=673E6403'} alt="" className="authorImage" />
                                         <span className="authorName">{journal.author || 'Anonymous Trader'}</span>
                                     </div>
 

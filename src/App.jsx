@@ -8,6 +8,7 @@ import Stat from "./pages/stats";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Errorpage from './pages/error/error'
 export const appInformation = createContext();
+import "./pages/style/min.css"
 
 const appInfo = {
   appName: 'tradNal',

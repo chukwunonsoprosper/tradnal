@@ -1,0 +1,105 @@
+@media screen and (max-width: 600px) {
+    /* Base app layout */
+    .appPage {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .activityOverview {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Profile page */
+    .profileContainer {
+        padding: 15px;
+    }
+
+    .profileHeader h2 {
+        font-size: 20px;
+    }
+
+    .profileStats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .statBox {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Public Journal page */
+    .journalsList {
+        padding: 10px;
+    }
+
+    .journalEntry {
+        padding: 15px;
+    }
+
+    .authorInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .authorImage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .journalDetails {
+        gap: 8px;
+    }
+
+    .detailRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Stats page */
+    .statsContainer {
+        padding: 15px;
+    }
+
+    .statsContainer h2 {
+        font-size: 20px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .statsGrid .statBox {
+        padding: 15px;
+    }
+
+    .statsGrid .statBox h3 {
+        font-size: 14px;
+    }
+
+    .statsGrid .statBox p {
+        font-size: 20px;
+    }
+
+    /* Sidebar activity section */
+    .activitySection {
+        width: 0;
+        display: none;
+    }
+
+    /* Main content area */
+    .activityOverview {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
