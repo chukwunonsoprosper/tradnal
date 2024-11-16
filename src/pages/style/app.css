@@ -110,7 +110,6 @@ body {
     height: 100%;
     overflow: auto;
     padding: 10px 20px;
-    scrollbar-width: 3px;
     position: fixed;
     left: 0;
     background-color: rgba(26, 25, 25, 0.283);
@@ -120,7 +119,6 @@ body {
     width: 70%;
     position: fixed;
     overflow: auto;
-    overflow-y: scroll;
     height: 100%;
     right: 0;
 }
@@ -424,5 +422,231 @@ body {
 }
 
 .value.loss {
+    color: #e74c3c;
+}
+
+.profileContainer {
+    background: white;
+    padding: 30px;
+    font-family: Manrope;
+    padding-bottom: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.profileHeader {
+    margin-bottom: 30px;
+}
+
+.profileHeader h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profileStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.statBox {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.statBox:hover {
+    transform: translateY(-5px);
+}
+
+.statLabel {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.statValue {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.recentTrades {
+    margin-top: 30px;
+}
+
+.recentTrades h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tradesList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tradeItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.tradeItem:hover {
+    background: #f1f3f5;
+}
+
+.tradePair {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.tradeProfit {
+    font-weight: 600;
+}
+
+.journalsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.journalEntry {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.journalEntry:hover {
+    transform: translateY(-2px);
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.authorImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.authorName {
+    font-weight: 500;
+    color: #2c3e50;
+    font-family: Manrope;
+}
+
+.journalContent {
+    padding: 10px 0;
+}
+
+.journalDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detailRow:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #666;
+    font-size: 14px;
+    font-family: Manrope;
+}
+
+.value {
+    font-weight: 500;
+    color: #2c3e50;
+    font-family: Manrope;
+}
+
+.value.profit {
+    color: #2ecc71;
+}
+
+.value.loss {
+    color: #e74c3c;
+}
+
+.statsContainer {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-family: Manrope;
+}
+
+.statsContainer h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.statsGrid .statBox {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.statsGrid .statBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.statsGrid .statBox h3 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.statsGrid .statBox p {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.statsGrid .statBox p.profit {
+    color: #2ecc71;
+}
+
+.statsGrid .statBox p.loss {
     color: #e74c3c;
 }
